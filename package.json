@@ -4,7 +4,7 @@
   "description": "practicing with redis db",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js --exec babel-node -e js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "ioredis": "^4.26.0",
+    "nodemon": "^2.0.7"
   }
 }
